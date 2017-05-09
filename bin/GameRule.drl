@@ -1,0 +1,70 @@
+package rules
+
+//list any import classes here.
+import com.billing.drools.demo.entity.BillingChargeParam;
+
+
+//declare any global variables here
+
+
+rule "Game1"
+salience 4
+
+    when
+        param:BillingChargeParam(gameId==1 && billingType==1)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(param.getMonthCount()*10);
+        System.out.println("the primary money is:"+param.getMoney());
+end
+
+rule "Game2"
+salience 4
+  when
+        param:BillingChargeParam(gameId==2 && billingType==1)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(param.getMonthCount()*20);
+        System.out.println("the primary money is:"+param.getMoney());
+
+end
+
+rule "Game3"
+salience 4
+  when
+        param:BillingChargeParam(gameId==3 && billingType==1)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(param.getMonthCount()*40);
+		System.out.println("the primary money is:"+param.getMoney());
+end
+
+rule "Game4"
+salience 4
+  when
+        param:BillingChargeParam(gameId==1 && billingType==2)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(100);
+        System.out.println("the primary money is:"+param.getMoney());
+end
+
+rule "Game5"
+salience 4
+  when
+        param:BillingChargeParam(gameId==2 && billingType==2)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(200);
+        System.out.println("the primary money is:"+param.getMoney());
+end
+
+rule "Game6"
+salience 4
+  when
+        param:BillingChargeParam(gameId==3 && billingType==2)
+    then
+    	System.out.println("execute game rule");
+        param.setMoney(400);
+        System.out.println("the primary money is:"+param.getMoney());
+end

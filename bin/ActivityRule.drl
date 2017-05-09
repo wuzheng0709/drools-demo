@@ -1,0 +1,43 @@
+package rules
+
+//list any import classes here.
+import com.billing.drools.demo.entity.BillingChargeParam;
+
+
+//declare any global variables here
+
+
+
+
+rule "Activity1"
+salience 3
+    when
+        param:BillingChargeParam(activityCode==1)
+    then
+        System.out.println("the discharge is 10");
+        param.setMoney(param.getMoney()-10);
+        System.out.println("the money after discharge is:"+param.getMoney());
+
+end
+
+rule "Activity2"
+salience 3
+    //include attributes such as "salience" here...
+    when
+        param:BillingChargeParam(activityCode==2)
+    then
+       System.out.println("the discharge is 15");
+        param.setMoney(param.getMoney()-15);
+        System.out.println("the money after discharge is:"+param.getMoney());
+end
+
+rule "Activity3"
+salience 3
+    //include attributes such as "salience" here...
+    when
+        param:BillingChargeParam(activityCode==3)
+    then
+       System.out.println("the discharge is 20");
+        param.setMoney(param.getMoney()-20);
+      System.out.println("the money after discharge is:"+param.getMoney());
+end

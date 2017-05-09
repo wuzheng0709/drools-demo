@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/main/rules"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="DROOLS/Drools"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/drools"/>
+	<classpathentry kind="lib" path="D:/BIMserver/ifc2x3javatoolbox_2.0.1_20130524.jar" sourcepath="D:/BIMserver/ifc2x3javatoolbox_src_2.0.1_20130524.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

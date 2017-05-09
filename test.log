@@ -1,0 +1,97 @@
+<object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Game2 [1]</activationId>
+      <rule>Game2</rule>
+      <declarations>param={3213100.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>AccumulatePoints6 [1]</activationId>
+      <rule>AccumulatePoints6</rule>
+      <declarations>param={3213100.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Senior [1]</activationId>
+      <rule>Senior</rule>
+      <declarations>param={3213100.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Activity1 [1]</activationId>
+      <rule>Activity1</rule>
+      <declarations>param={3213100.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>1</factId>
+      <objectToString>{3213100.0}</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Game2 [1]</activationId>
+      <rule>Game2</rule>
+      <declarations>param={3213100.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Game2 [1]</activationId>
+      <rule>Game2</rule>
+      <declarations>param={32131060.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Activity1 [1]</activationId>
+      <rule>Activity1</rule>
+      <declarations>param={32131060.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Activity1 [1]</activationId>
+      <rule>Activity1</rule>
+      <declarations>param={32131050.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Senior [1]</activationId>
+      <rule>Senior</rule>
+      <declarations>param={32131050.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Senior [1]</activationId>
+      <rule>Senior</rule>
+      <declarations>param={32131045.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>AccumulatePoints6 [1]</activationId>
+      <rule>AccumulatePoints6</rule>
+      <declarations>param={32131045.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>AccumulatePoints6 [1]</activationId>
+      <rule>AccumulatePoints6</rule>
+      <declarations>param={32131645.0}</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+  </events>
+  <engine>RETEOO</engine>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>

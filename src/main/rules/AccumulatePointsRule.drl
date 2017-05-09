@@ -1,0 +1,93 @@
+package rules
+
+//list any import classes here.
+import com.billing.drools.demo.entity.BillingChargeParam;
+
+
+//declare any global variables here
+
+rule "AccumulatePoints1"
+salience 1
+    when
+    //LHS(Left Hand Side)块
+    //在working Memory中，如果存在一个BillingChargeParam对象满足他的gameId属性等于1且userStatus是PRIMARY的条件，
+    //就把满足条件的BillingChargeParam实例用变量param表示，以便在RHS中使用。
+        param:BillingChargeParam(gameId==1 && userStatus==param.PRIMARY)
+    then
+    //RHS(Right Hand Side)块  
+        param.setAccumulatePoints(1);
+    	System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());        
+end
+
+rule "AccumulatePoints2"
+salience 1
+    when
+        param:BillingChargeParam(gameId==1 && userStatus==param.INTERMEDIATE)
+    then
+       param.setAccumulatePoints(2);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints3"
+salience 1
+    when
+        param:BillingChargeParam(gameId==1 && userStatus==param.SENIOR)
+    then
+       param.setAccumulatePoints(3);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints4"
+salience 1
+
+    when
+        param:BillingChargeParam(gameId==2 && userStatus==param.PRIMARY)
+    then
+        param.setAccumulatePoints(2);
+        System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints5"
+salience 1
+    when
+        param:BillingChargeParam(gameId==2 && userStatus==param.INTERMEDIATE)
+    then
+       param.setAccumulatePoints(4);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints6"
+salience 1
+    when
+        param:BillingChargeParam(gameId==2 && userStatus==param.SENIOR)
+    then
+       param.setAccumulatePoints(6);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints7"
+salience 1
+    when
+        param:BillingChargeParam(gameId==3 && userStatus==param.PRIMARY)
+    then
+        param.setAccumulatePoints(4);
+        System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints8"
+salience 1
+    when
+        param:BillingChargeParam(gameId==3 && userStatus==param.INTERMEDIATE)
+    then
+       param.setAccumulatePoints(8);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end
+
+rule "AccumulatePoints9"
+salience 1
+    when
+        param:BillingChargeParam(gameId==3 && userStatus==param.SENIOR)
+    then
+       param.setAccumulatePoints(12);
+       System.out.println("the accumulatePoints is:"+param.getAccumulatePoints());
+end

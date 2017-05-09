@@ -1,0 +1,42 @@
+package rules
+
+//list any import classes here.
+import com.billing.drools.demo.entity.BillingChargeParam;
+
+
+//declare any global variables here
+
+
+
+
+rule "Primary"
+salience 2
+    when
+        param:BillingChargeParam(userStatus == BillingChargeParam.PRIMARY)
+    then
+        System.out.println("no discount");
+        param.setMoney(param.getMoney());
+        System.out.println("the money after discount is:"+param.getMoney());
+end
+
+rule "Intermediate"
+salience 2
+    //include attributes such as "salience" here...
+    when
+       param:BillingChargeParam(userStatus==BillingChargeParam.INTERMEDIATE)
+    then
+        System.out.println("the discount is 9.5");
+		param.setMoney(param.getMoney()*0.95);
+		System.out.println("the money after discount is:"+param.getMoney());
+end
+
+rule "Senior"
+salience 2
+    //include attributes such as "salience" here...
+    when
+       param:BillingChargeParam(userStatus==BillingChargeParam.SENIOR)
+    then
+        System.out.println("the discount is 9.0");
+		param.setMoney(param.getMoney()*0.90);
+		System.out.println("the money after discount is:"+param.getMoney());
+end
